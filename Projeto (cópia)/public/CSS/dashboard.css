@@ -1,0 +1,172 @@
+/* Estilos para a barra de navegação */
+.navbar {
+    background-color: #333;
+    /* Cor de fundo da barra de navegação */
+    padding: 10px;
+    /* Espaçamento interno da barra */
+    position: fixed;
+    /* A barra de navegação ficará fixa no topo */
+    top: 0;
+    /* Fixa a barra no topo da página */
+    left: 0;
+    /* Fixa a barra na parte esquerda */
+    width: 100%;
+    /* A barra de navegação ocupará toda a largura da tela */
+    z-index: 1000;
+    /* Garante que a barra fique acima de outros conteúdos */
+}
+
+.navbar-list {
+    list-style: none;
+    /* Remove o estilo da lista (bolinhas) */
+    margin: 0;
+    /* Remove a margem da lista */
+    padding: 0;
+    /* Remove o padding da lista */
+    display: flex;
+    /* Exibe os itens da lista em linha (horizontal) */
+    justify-content: center;
+    /* Alinha os itens ao centro */
+}
+
+.navbar-list li {
+    margin: 0 15px;
+    /* Espaçamento entre os itens da lista */
+}
+
+.navbar-list a {
+    color: white;
+    /* Cor do texto do link */
+    text-decoration: none;
+    /* Remove o sublinhado do link */
+    font-weight: bold;
+    /* Define o texto do link em negrito */
+}
+
+.navbar-list a:hover {
+    color: #f44336;
+    /* Altera a cor do link ao passar o mouse */
+}
+
+/* Estilos para o conteúdo principal */
+.container {
+    margin-top: 70px;
+    /* Espaço superior para não ficar por baixo da barra de navegação */
+    padding: 20px;
+    /* Padding interno para o conteúdo */
+}
+
+.title {
+    text-align: center;
+    /* Centraliza o título */
+    margin-bottom: 30px;
+    /* Espaçamento abaixo do título */
+}
+
+/* Estilo das cards de marmitas */
+.marmitas-container {
+    display: flex;
+    /* Exibe as marmitas em linha */
+    flex-wrap: wrap;
+    /* Permite que as marmitas quebrem para a próxima linha se não couberem */
+    gap: 20px;
+    /* Espaçamento entre as marmitas */
+    justify-content: center;
+    /* Centraliza as marmitas */
+}
+
+.marmitas-card {
+    width: 300px;
+    /* Largura fixa para o card */
+    border: 1px solid #ddd;
+    /* Borda leve para o card */
+    padding: 10px;
+    /* Padding interno do card */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra leve ao redor do card */
+}
+
+.card-image-container {
+    width: 100%;
+    /* Largura total para a imagem */
+    height: 200px;
+    /* Altura fixa para a imagem */
+    overflow: hidden;
+    /* Garante que a imagem não ultrapasse o contêiner */
+    margin-bottom: 10px;
+    /* Espaçamento abaixo da imagem */
+}
+
+.card-image-container img {
+    width: 100%;
+    /* A imagem ocupará toda a largura do contêiner */
+    height: 100%;
+    /* A imagem ocupará toda a altura do contêiner */
+    object-fit: cover;
+    /* A imagem será redimensionada para cobrir todo o espaço, sem distorção */
+}
+
+.card-body {
+    text-align: center;
+    /* Centraliza o texto dentro do corpo do card */
+}
+
+/* Estilos para os botões */
+.delete-button,
+.update-button {
+    margin-top: 10px;
+    /* Espaço acima dos botões */
+    padding: 8px 16px;
+    /* Padding interno dos botões */
+    background-color: #f44336;
+    /* Cor de fundo vermelha para o botão de deletar */
+    color: white;
+    /* Cor do texto do botão */
+    border: none;
+    /* Remove a borda do botão */
+    cursor: pointer;
+    /* Altera o cursor para uma mão ao passar sobre o botão */
+    width: 100%;
+    /* Faz o botão ocupar toda a largura disponível */
+}
+
+.update-button {
+    background-color: #4CAF50;
+    /* Cor de fundo verde para o botão de atualizar */
+}
+
+.update-button:hover,
+.delete-button:hover {
+    background-color: #45a049;
+    /* Altera a cor de fundo dos botões ao passar o mouse */
+}
+
+/* Estilo dos formulários */
+form {
+    margin-top: 10px;
+    /* Espaçamento acima dos formulários */
+    padding: 10px;
+    /* Padding interno dos formulários */
+    border: 1px solid #ddd;
+    /* Borda leve para os formulários */
+    background-color: #f9f9f9;
+    /* Cor de fundo leve para os formulários */
+}
+
+/* Estilo dos campos de entrada de dados */
+input {
+    width: 100%;
+    /* Campos de entrada ocupam toda a largura */
+    padding: 8px;
+    /* Padding interno para os campos */
+    margin-bottom: 10px;
+    /* Espaçamento abaixo dos campos */
+}
+
+/* Estilo do título de edição */
+h3 {
+    margin-bottom: 10px;
+    /* Espaçamento abaixo do título */
+}
